@@ -401,7 +401,7 @@ WonGetFileInformationByHandleEx(
         return FALSE;
     }
 
-    if (FileInformationClass == WonFileStreamInfo && io.Information == FILE_SUPERSEDED)
+    if (FileInformationClass == WonFileStreamInfo && io.Information == FILE_SUPERSEDE)
     {
 #ifndef STATUS_END_OF_FILE
     #define STATUS_END_OF_FILE ((NTSTATUS)0xC0000011)
